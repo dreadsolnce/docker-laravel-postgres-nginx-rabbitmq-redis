@@ -35,4 +35,4 @@ EXPOSE 9000
 
 COPY ./supervisor.conf /etc/supervisor/conf.d/supervisord.conf
 
-CMD ["php-fpm"]
+# CMD ["php-fpm"]
