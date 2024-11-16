@@ -68,6 +68,7 @@ services:
         - "15672:15672"
       volumes:
 #        - ./sourcefiles/rabbitmq-data:/var/lib/rabbitmq/
+        - ./sourcefiles/rabbitmq/management_agent.disable_metrics_collector.conf:/etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
         - ./data/${APP_NAME}/rabbitmq-data:/var/lib/rabbitmq/
       networks:
         net_laravel:
